@@ -6,9 +6,6 @@
   --max-width: 1100px;
 }
 
-/* ------------------------------
-   Global Reset & Base Styles
------------------------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,9 +19,6 @@ body {
   background: #111;
 }
 
-/* ------------------------------
-   Animations
------------------------------- */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -41,18 +35,12 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ------------------------------
-   Layout Containers
------------------------------- */
 .container {
   width: 90%;
   max-width: var(--max-width);
   margin: 0 auto;
 }
 
-/* ------------------------------
-   Header & Navigation
------------------------------- */
 header {
   position: fixed;
   top: 0;
@@ -90,9 +78,6 @@ nav a:hover {
   color: var(--accent);
 }
 
-/* ------------------------------
-   Hero Section (Home)
------------------------------- */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -172,8 +157,6 @@ nav a:hover {
   margin: 15px 0;
   color: var(--muted);
 }
-
-/* Hero Button */
 .custom-btn {
   display: inline-block;
   padding: 14px 32px;
@@ -185,27 +168,21 @@ nav a:hover {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 255, 150, 0.3);
 }
-
 .custom-btn:hover {
   transform: scale(1.08);
   background: #fff;
   color: var(--accent, #00ff99);
   box-shadow: 0 6px 25px rgba(0, 255, 150, 0.5);
 }
-
 .custom-btn-wrapper {
   position: relative;
   z-index: 1;
   text-align: center;
   margin-top: 30px;
 }
-/* ------------------ Mobile hamburger menu (≤ 480px) ------------------ */
-/* Hide the desktop nav and show hamburger */
 @media (max-width: 480px) {
-  /* hide regular nav */
   #nav-menu { display: none; }
 
-  /* show hamburger icon */
   .menu-toggle {
     display: block;
     background: none;
@@ -216,7 +193,6 @@ nav a:hover {
     z-index: 3000;
   }
 
-  /* mobile menu overlay style when visible */
   #nav-menu.show {
     display: flex;
     flex-direction: column;
@@ -224,13 +200,13 @@ nav a:hover {
     align-items: center;
     gap: 18px;
     position: fixed;
-    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    inset: 0; 
     background: rgba(8, 12, 20, 0.98);
-    padding-top: 80px; /* leave space for header if needed */
+    padding-top: 80px; 
     z-index: 2999;
   }
 
-  /* mobile menu link look */
+ 
   #nav-menu.show a {
     color: #fff;
     font-size: 1.25rem;
@@ -238,16 +214,10 @@ nav a:hover {
     padding: 8px 20px;
   }
 
-  /* make hamburger visually separate from the content */
+  
   header .container.nav { position: relative; }
 }
-
-/* Ensure the menu-toggle is hidden on larger screens */
 .menu-toggle { display: none; }
-
-/* ------------------------------
-   Sections General
------------------------------- */
 section {
   padding: 80px 0;
 }
@@ -257,12 +227,8 @@ section h2 {
   margin-bottom: 20px;
   color: var(--accent);
 }
-
-/* ------------------------------
-   About Section
------------------------------- */
 #about {
-  background-color: #14203a; /* Dark navy variation */
+  background-color: #14203a;
   color: #e9eef1;
   min-height: 100vh;
   display: flex;
@@ -306,10 +272,9 @@ section h2 {
   background: #fff;
   border: 4px solid var(--accent);
 }
-/* ---------- Resume Button Center Fix ---------- */
 .resume-btn-container {
   width: 100%;
-  text-align: center;   /* Centers inline elements even inside flex/grid parents */
+  text-align: center;  
   margin-top: 25px;
 }
 
@@ -333,12 +298,8 @@ section h2 {
   box-shadow: 0 6px 20px rgba(0, 230, 163, 0.6);
   transform: translateY(-3px);
 }
-
-/* ------------------------------
-   Skills Section
------------------------------- */
 #skills {
-  background-color: #1a2645; /* Slightly lighter tone */
+  background-color: #1a2645; 
   color: #fff;
 }
 
@@ -378,11 +339,8 @@ section h2 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-/* ------------------------------
-   Project Section
------------------------------- */
 #project {
-  background-color: #1e2d4f; /* Deep blue tone */
+  background-color: #1e2d4f; 
   color: #e6e6e6;
   min-height: 100vh;
   display: block;
@@ -408,11 +366,8 @@ section h2 {
   box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-/* ------------------------------
-   Contact Section
------------------------------- */
 #contact {
-  background-color: #26355d; /* Brighter blue tone */
+  background-color: #26355d; 
   color: #fff;
   width: 100%;
   min-height: 100vh;
@@ -473,9 +428,6 @@ section h2 {
   background: #0056b3;
 }
 
-/* ------------------------------
-   Modals
------------------------------- */
 .modal {
   display: none;
   position: fixed;
@@ -511,9 +463,6 @@ section h2 {
   color: #fff;
 }
 
-/* ------------------------------
-   Skills Grid (Inside Modal)
------------------------------- */
 .skills-grid {
   display: flex;
   gap: 16px;
@@ -535,9 +484,6 @@ section h2 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
 
-/* ------------------------------
-   Footer
------------------------------- */
 footer {
   position: relative;
   z-index: 2;
@@ -545,7 +491,7 @@ footer {
   background: #111;
   color: #fff;
 }
-/* ---------- Footer Social Buttons (with images) ---------- */
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -580,7 +526,7 @@ footer {
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: brightness(1) invert(1); /* makes logos white if they’re black */
+  filter: brightness(1) invert(1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -595,10 +541,6 @@ footer {
   filter: brightness(1) invert(0);
 }
 
-
-/* ------------------------------
-   Grid & Card Layouts
------------------------------- */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -637,10 +579,8 @@ footer {
   border-radius: 0;
 }
 section {
-  scroll-margin-top: 90px; /* header height buffer */
+  scroll-margin-top: 90px; 
 }
-
-/* Tablet and below (≤ 992px) */
 @media (max-width: 992px) {
   .hero-content { gap: 24px; }
   .hero-text h2 { font-size: 2rem; }
@@ -651,12 +591,11 @@ section {
   .about-img { flex: 1 1 100%; }
   .about-img img { width: 220px; height: 220px; }
 
-  /* Skills grid: remove left offset, center items, make 2-up */
+
   #skills .row { margin-left: 0; justify-content: center; }
   #skills .col-md-4 { flex: 0 1 45%; max-width: 45%; }
 }
 
-/* Small tablets/phones (≤ 768px) */
 @media (max-width: 768px) {
   header .nav { flex-wrap: wrap; gap: 10px; padding: 8px 0; }
   header nav {
@@ -672,7 +611,6 @@ section {
   .hero-img-container { width: 180px; height: 180px; }
   .hero-text { max-width: 100%; text-align: center; }
 
-  /* Stack About columns */
   .about-flex {
     flex-direction: column;
     align-items: center;
@@ -681,18 +619,15 @@ section {
   .about-text { width: 100%; }
   .about-img { width: 100%; display: flex; justify-content: center; }
 
-  /* Skills/cards fluid */
   .skill-card { width: 100%; height: auto; }
   .card-img-top { width: 96px; height: 96px; margin-bottom: 12px; object-fit: contain; }
   #skills .col-md-4 { flex: 0 1 100%; max-width: 520px; }
 
-  /* Sections: allow natural height on small screens */
   #about, #skills, #contact, #portfolio {
     min-height: auto;
   }
 }
 
-/* Phones (≤ 480px) */
 @media (max-width: 480px) {
   .logo { font-size: 20px; }
   .hero-text h2 { font-size: 1.6rem; }
@@ -701,7 +636,5 @@ section {
   .custom-btn { padding: 12px 20px; font-size: 0.95rem; }
 
   .about-img img { width: 200px; height: 200px; }
-
-  /* Tighten card spacing on very small screens */
   #skills .col-md-4 { margin-bottom: 20px; }
 }

@@ -11,7 +11,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Header -->
   <header>
     <div class="container nav">
       <h1 class="logo">JDev<span>.</span></h1>
@@ -26,29 +25,28 @@
     </div>
   </header>
 
-  <!-- Hero with background -->
+
   <section class="hero fade-in" id="home">
     <div class="overlay"></div>
     <div class="container hero-content">
-      <!-- Left: Image -->
+   
       <div class="hero-img-container">
         <img src="./img/439e18f8-01a6-4cb2-b536-bd002a2eacea.jfif" alt="My Photo">
       </div>
 
-      <!-- Right: Text -->
+   
       <div class="hero-text">
         <h2><span class="accent">Alejandro Jaime Casamino</span></h2>
         <p class="hero-subtitle">Web Develop | Data Annotator | Data Reviewer </p>
       </div>
     </div>
 
-    <!-- Button -->
+
     <div class="btn-wrapper">
       <a href="#project" class="custom-btn">View My Work</a>
     </div>
   </section>
 
-  <!-- About -->
   <section class="about" id="about">
   <div class="container about-flex">
     <div class="about-text">
@@ -67,7 +65,7 @@
   </div>
 </section>
 
- <!-- Skills Section -->
+
 <section class="skills content fade-in" id="skills">
   <div class="container">
     <h2>Skills</h2>
@@ -313,7 +311,7 @@
 </section>
       
 
-  <!-- Contact -->
+
   <section class="contact content fade-in" id="contact">
   <div class="container">
     <h2>Contact Me</h2>
@@ -332,23 +330,22 @@
   </div>
 </section>
 
-  <!-- Footer -->
+  
   <footer>
   <div class="footer-container">
     <p>© <span id="year"></span> Jaime Casamino. All Rights Reserved.</p>
 
     <div class="footer-socials">
-      <!-- ✅ Facebook -->
+    
       <a href="https://www.facebook.com/bnjxt" target="_blank" class="social-btn" aria-label="Facebook">
         <img src="./img/fb.png" alt="Facebook Logo">
       </a>
 
-      <!-- ✅ GitHub -->
+     
       <a href="https://github.com/JaimeCasamino" target="_blank" class="social-btn" aria-label="GitHub">
         <img src="./img/github.png" alt="GitHub Logo">
       </a>
 
-      <!-- ✅ Gmail -->
       <a href="https://mail.google.com/mail/u/0/?fs=1&to=a.casamino.536773@umindanao.edu.ph&tf=cm" target="_blank" class="social-btn" aria-label="Gmail">
         <img src="./img/gmail.webp" alt="Gmail Logo">
       </a>
@@ -357,16 +354,15 @@
 </footer>
 
 
-<!-- Font Awesome for icons -->
+
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
-  <!-- Scripts -->
+
   <script>
-    // Auto year
+
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Scroll fade effect
     document.addEventListener("scroll", () => {
       const elements = document.querySelectorAll(".fade-in");
       const triggerBottom = window.innerHeight * 0.85;

@@ -1,6 +1,5 @@
 'use strict';
 
-// Modal open/close functions (global)
 function openModal(id) {
   const modal = document.getElementById(id);
   if (modal) {
@@ -16,7 +15,6 @@ function closeModal(id) {
   }
 }
 
-// Close modal when clicking outside modal-content
 window.addEventListener('click', function(event) {
   const modals = document.querySelectorAll('.modal');
   modals.forEach(modal => {
@@ -26,7 +24,6 @@ window.addEventListener('click', function(event) {
   });
 });
 
-// Close modal with ESC key
 window.addEventListener('keydown', function(event) {
   if (event.key === "Escape") {
     const modals = document.querySelectorAll('.modal');
@@ -39,13 +36,12 @@ window.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Auto year in footer
+ 
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // Fade-in scroll effect
   const elements = document.querySelectorAll(".fade-in");
 
   function checkFade() {
@@ -57,14 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-  // Run on scroll
   window.addEventListener("scroll", checkFade);
-
-  // Run once on page load
   checkFade();
-
-  // ✅ Make all project cards clickable (open in new tab)
   const projectCards = document.querySelectorAll(".project-card");
   projectCards.forEach(card => {
     card.addEventListener("click", e => {
