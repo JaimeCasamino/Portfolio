@@ -5,7 +5,6 @@ function openModal(id) {
   const modal = document.getElementById(id);
   if (modal) {
     modal.style.display = "block";
-    // Optional: focus for accessibility
     modal.setAttribute('tabindex', '-1');
     modal.focus();
   }
@@ -64,4 +63,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Run once on page load
   checkFade();
+
+  // ✅ Make all project cards clickable (open in new tab)
+  const projectCards = document.querySelectorAll(".project-card");
+  projectCards.forEach(card => {
+    card.addEventListener("click", e => {
+      e.preventDefault();
+      const link = card.getAttribute("href");
+      if (link) window.open(link, "_blank");
+    });
+  });
 });
+
