@@ -17,7 +17,6 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
@@ -29,134 +28,115 @@
       </div>
     </div>
   </nav>
-    </div>
-  </header>
-
 
   <section class="hero fade-in" id="home">
     <div class="overlay"></div>
     <div class="container hero-content">
-   
       <div class="hero-img-container">
         <img src="./img/439e18f8-01a6-4cb2-b536-bd002a2eacea.jfif" alt="My Photo">
       </div>
-
-   
       <div class="hero-text">
         <h2><span class="accent">Alejandro Jaime Casamino</span></h2>
         <p class="hero-subtitle">Web Develop | Data Annotator | Data Reviewer </p>
       </div>
     </div>
-
-
     <div class="btn-wrapper">
       <a href="#project" class="custom-btn">View My Work</a>
     </div>
   </section>
 
   <section class="about" id="about">
-  <div class="container about-flex">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hi! I’m <b>Alejandro Jaime Casamino</b>, an Electronics Engineer from the University of Mindanao. I enjoy creating and developing as a Web Developer, while also working in Data Annotation and Data Review to support AI and machine learning systems. I love combining creativity with precision—whether it’s coding websites or ensuring data accuracy. Always eager to learn, I’m driven to grow my skills and make an impact in the tech space.
-      </p>
-      <a href="https://jaimecasamino.github.io/Resume/" class="resume-btn offset-md-6"> Resume </a>
-  
-      </a>
+    <div class="container about-flex">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hi! I’m <b>Alejandro Jaime Casamino</b>, an Electronics Engineer from the University of Mindanao. I enjoy creating and developing as a Web Developer, while also working in Data Annotation and Data Review to support AI and machine learning systems. I love combining creativity with precision—whether it’s coding websites or ensuring data accuracy. Always eager to learn, I’m driven to grow my skills and make an impact in the tech space.
+        </p>
+        <a href="https://jaimecasamino.github.io/Resume/" class="resume-btn offset-md-6"> Resume </a>
+      </div>
+      <div class="about-img">
+        <img src="./img/selff.jfif" alt="About Me Photo">
+      </div>
     </div>
+  </section>
+  <section class="skills py-5 fade-in" id="skills">
+    <div class="container">
+      <h2 class="text-center mb-5 text-accent">Skills</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal1')">
+            <img src="./img/java.png" class="card-img-top" alt="Skill 1 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>Java</h5>
+              <p>Object-Oriented, Portable, Secure, Versatile</p>
+            </div>
+          </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal2')">
+            <img src="./img/c++.png" class="card-img-top" alt="Skill 2 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>C++</h5>
+              <p>Powerful, Efficient, Flexible, Complex</p>
+            </div>
+          </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal3')">
+            <img src="./img/Python-logo-notext.svg.png" class="card-img-top" alt="Skill 3 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>Python</h5>
+              <p>Simple, Versatile, Readable, Popular</p>
+            </div>
+          </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal4')">
+            <img src="./img/ccsss.webp" class="card-img-top" alt="Skill 4 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>CSS</h5>
+              <p>Styling, Responsive Design, Animations, Layouts</p>
+            </div>
+          </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal5')">
+            <img src="./img/javascript-logo-javascript-icon-transparent-free-png.webp" class="card-img-top" alt="Skill 5 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>JavaScript</h5>
+              <p>Interactivity, Dynamic Content, Client-Side Scripting, Versatile</p>
+            </div>
+          </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal6')">
+            <img src="./img/Other-html-5-icon.png" class="card-img-top" alt="Skill 6 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>HTML</h5>
+              <p>Semantic and accessible web pages.</p>
+            </div>
+          </button>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <button class="card skill-card w-100" onclick="openModal('modal7')">
+            <img src="./img/Data_Annotation.png" class="card-img-top" alt="Skill 7 Preview" height="200px">
+            <div class="card-body text-center">
+              <h5>Data Annotation</h5>
+              <p>Labeling, Training, Accuracy, AI</p>
+            </div>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="about-img">
-      <img src="./img/selff.jfif" alt="About Me Photo">
-    </div>
-  </div>
-</section>
-
-
-<section class="skills content fade-in" id="skills">
+  </section>
+  <section class="Project py-5 fade-in" id="project">
   <div class="container">
-    <h2>Skills</h2>
-    <div class="row">
-      <!-- Skill 1 --> 
-      <div class="col-md-4">
-        <button class="card skill-card" onclick="openModal('modal1')">
-          <img src="./img/java.png" class="card-img-top" alt="Skill 1 Preview" height="200px">
-          <div class="card-body">
-            <h5>Java</h5>
-            <p>Object-Oriented, Portable, Secure, Versatile</p>
-          </div>
-        </button>
-      </div>
-      <!-- Skill 2 -->
-      <div class="col-md-4">
-        <button class="card skill-card" onclick="openModal('modal2')">
-          <img src="./img/c++.png" class="card-img-top" alt="Skill 2 Preview" height="200px">
-          <div class="card-body">
-            <h5>C++</h5>
-            <p>Powerful, Efficient, Flexible, Complex</p>
-          </div>
-        </button>
-      </div>
-      <!-- Skill 3 -->
-      <div class="col-md-4">
-        <button class="card skill-card" onclick="openModal('modal3')">
-          <img src="./img/Python-logo-notext.svg.png" class="card-img-top" alt="Skill 3 Preview" height="200px">
-          <div class="card-body">
-            <h5>Python</h5>
-            <p>Simple, Versatile, Readable, Popular</p>
-          </div>
-        </button>
-      </div>
-      <!-- Skill 4 -->
-      <div class="col-md-4">
-        <button class="card skill-card" onclick="openModal('modal4')">
-          <img src="./img/ccsss.webp" class="card-img-top" alt="Skill 4 Preview" height="200px">
-          <div class="card-body">
-            <h5>CSS</h5>
-            <p>Styling, Responsive Design, Animations, Layouts</p>
-          </div>
-        </button>
-    </div>
-      <!-- Skill 5 -->
-      <div class="col-md-4">
-        <button class="card skill-card" onclick="openModal('modal5')">
-          <img src="./img/javascript-logo-javascript-icon-transparent-free-png.webp" class="card-img-top" alt="Skill 5 Preview" height="200px">
-          <div class="card-body">
-            <h5>JavaScript</h5>
-            <p>Interactivity, Dynamic Content, Client-Side Scripting, Versatile</p>
-          </div>
-        </button>
-      </div>
-      <!-- Skill 6 -->
-      <div class="col-md-4">
-        <button class="card skill-card" onclick="openModal('modal6')">
-          <img src="./img/Other-html-5-icon.png" class="card-img-top" alt="Skill 6 Preview" height="200px">
-          <div class="card-body">
-            <h5>HTML</h5>
-            <p>Semantic and accessible web pages.</p>
-          </div>
-        </button>
-      </div>
-      <!-- Skill 7 -->
-      <div class="col-md-4 offset-md-4">
-        <button class="card skill-card" onclick="openModal('modal5')">
-          <img src="./img/Data_Annotation.png" class="card-img-top" alt="Skill 5 Preview" height="200px">
-          <div class="card-body">
-            <h5>Data Annotation</h5>
-            <p>Labeling, Training, Accuracy, AI</p>
-          </div>
-        </button>
-      </div>
-  </div>
-</section>
-<!-- Project -->
-<section class="Project fade-in" id="project">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="row">
+    <h2 class="text-center mb-5 text-accent">Projects</h2>
+    <div class="row g-4 justify-content-center">
+
       <!-- Project 1 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-8/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-8/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 8.png" class="card-img-top" alt="Java Project" height="200px">
           <div class="card-body">
             <h5>Exercise 8</h5>
@@ -164,9 +144,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 2 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-9/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-9/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 9.png" class="card-img-top" alt="C++ Project" height="200px">
           <div class="card-body">
             <h5>Exercise 9</h5>
@@ -174,9 +155,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 3 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-10/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-10/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 10.png" class="card-img-top" alt="Python Project" height="200px">
           <div class="card-body">
             <h5>Exercise 10</h5>
@@ -184,9 +166,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 4 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-11_Goal-1/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-11_Goal-1/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 11 - Goal 1.png" class="card-img-top" alt="CSS Project" height="200px">
           <div class="card-body">
             <h5>Exercise 11 - Goal 1</h5>
@@ -194,9 +177,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 5 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-11_Goal-2/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-11_Goal-2/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercies 11 - Goal 2.png" class="card-img-top" alt="JavaScript Project" height="200px">
           <div class="card-body">
             <h5>Exercise 11 - Goal 2</h5>
@@ -204,9 +188,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 6 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-12/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-12/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 12.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Exercise 12</h5>
@@ -214,9 +199,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 7 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-13/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-13/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 13.png" class="card-img-top" alt="Data Annotation Project" height="200px">
           <div class="card-body">
             <h5>Exercise 13</h5>
@@ -224,9 +210,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 8 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-14/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-14/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 14.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Exercise 14</h5>
@@ -234,9 +221,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 9 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-15/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-15/" target="_blank" class="card project-card text-center">
           <img src="./img/Exercise 15.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Exercise 15</h5>
@@ -244,9 +232,10 @@
           </div>
         </a>
       </div>
+
       <!-- Project 10 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Resume/" target="_blank" class="card project-card">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Resume/" target="_blank" class="card project-card text-center">
           <img src="./img/Resume.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Resume</h5>
@@ -254,118 +243,115 @@
           </div>
         </a>
       </div>
-      <!-- Project 11-->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Number-Guessing-Game-Part-1/" target="_blank" class="card project-card">
+
+      <!-- Project 11 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Number-Guessing-Game-Part-1/" target="_blank" class="card project-card text-center">
           <img src="./img/Number Game P1.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Number Game P1</h5>
             <p>Guessing Game</p>
           </div>
         </a>
-    </div>
-    <!-- Project 12 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Number-Guessing-Game-Part-2/" target="_blank" class="card project-card">
+      </div>
+
+      <!-- Project 12 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Number-Guessing-Game-Part-2/" target="_blank" class="card project-card text-center">
           <img src="./img/Number Game P2.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Number Game P2</h5>
             <p>Guessing Game</p>
           </div>
         </a>
-    </div>
-    <!-- Project 13 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Drum-Kit/" target="_blank" class="card project-card">
+      </div>
+
+      <!-- Project 13 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Drum-Kit/" target="_blank" class="card project-card text-center">
           <img src="./img/Drum Kit.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Drum Kit</h5>
             <p>Drum Kit Using JS</p>
           </div>
         </a>
-    </div>
-    <!-- Project 14 -->
-      <div class="col-md-4">
-        <a href="https://jaimecasamino.github.io/Exercise-18/" target="_blank" class="card project-card">
+      </div>
+
+      <!-- Project 14 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Exercise-18/" target="_blank" class="card project-card text-center">
           <img src="./img/Dice Game.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Exercise 18</h5>
             <p>Dice Game</p>
           </div>
         </a>
-    </div>
-    <!-- Project 15 -->
-      <div class="col-md-4">
-        <a href="https://github.com/JaimeCasamino/Calculator" target="_blank" class="card project-card">
+      </div>
+
+      <!-- Project 15 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/Calculator/" target="_blank" class="card project-card text-center">
           <img src="./img/Calculator.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Calculator</h5>
             <p>Exam 3</p>
           </div>
         </a>
-    </div>
-    <!-- Project 16 -->
-      <div class="col-md-4 offset-md-4">
-        <a href="https://jaimecasamino.github.io/RSVP/" target="_blank" class="card project-card">
+      </div>
+
+      <!-- Project 16 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+        <a href="https://jaimecasamino.github.io/RSVP/" target="_blank" class="card project-card text-center">
           <img src="./img/rsvp.png" class="card-img-top" alt="HTML Project" height="200px">
           <div class="card-body">
             <h5>Exercise 19</h5>
             <p>RSVP</p>
           </div>
         </a>
+      </div>
+
     </div>
   </div>
 </section>
-      
+
+
   <section class="contact content fade-in" id="contact">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <form class="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
-  
-  <footer>
-  <div class="footer-container">
-    <p>© <span id="year"></span> Jaime Casamino. All Rights Reserved.</p>
-
-    <div class="footer-socials">
-    
-      <a href="https://www.facebook.com/bnjxt" target="_blank" class="social-btn" aria-label="Facebook">
-        <img src="./img/fb.png" alt="Facebook Logo">
-      </a>
-
-     
-      <a href="https://github.com/JaimeCasamino" target="_blank" class="social-btn" aria-label="GitHub">
-        <img src="./img/github.png" alt="GitHub Logo">
-      </a>
-
-      <a href="https://mail.google.com/mail/u/0/?fs=1&to=a.casamino.536773@umindanao.edu.ph&tf=cm" target="_blank" class="social-btn" aria-label="Gmail">
-        <img src="./img/gmail.webp" alt="Gmail Logo">
-      </a>
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
-  </div>
-</footer>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>© <span id="year"></span> Jaime Casamino. All Rights Reserved.</p>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/bnjxt" target="_blank" class="social-btn" aria-label="Facebook">
+          <img src="./img/fb.png" alt="Facebook Logo">
+        </a>
+        <a href="https://github.com/JaimeCasamino" target="_blank" class="social-btn" aria-label="GitHub">
+          <img src="./img/github.png" alt="GitHub Logo">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/?fs=1&to=a.casamino.536773@umindanao.edu.ph&tf=cm" target="_blank" class="social-btn" aria-label="Gmail">
+          <img src="./img/gmail.webp" alt="Gmail Logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
   <script>
-
     document.getElementById("year").textContent = new Date().getFullYear();
-
     document.addEventListener("scroll", () => {
       const elements = document.querySelectorAll(".fade-in");
       const triggerBottom = window.innerHeight * 0.85;
-
       elements.forEach(el => {
         const boxTop = el.getBoundingClientRect().top;
         if (boxTop < triggerBottom) {
